@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Para que el padding y el borde están incluidos en el ancho y el alto especificados*/
+}
+
+h3{
+    text-decoration: none;
+}
+
+/* Estilos del navbar */
+.navbar {
+    background-color: #F8F8F8;
+    padding: 0px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Ajuste de espacio */
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 90px; /* Para bajar el logo, preguntar si esta bien hacerlo asi */
+}
+
+.navbar-brand .brand-logo {
+    width: 240px;
+}
+
+.navbar-icons {
+    display: flex;
+    gap: 20px;
+    margin-left:95%;
+}
+
+.navbar-icons .icon {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+.navbar-icons .icon:hover {
+    color: #595959;
+}
+
+
+.navbar-bottom {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+.navbar-menu li {
+    display: inline;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: #595959;
+}
+
+/*-------FIN NAV------*/
+
+.main-header {
+    height: 100vh; /* Ocupa toda la pantalla */
+    background-image: url('../img/banneri.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.main-text h1 {
+    font-size: 58px;
+    font-weight: bold;
+}
+  
+.main-text p {
+    font-size: 19px;
+}
+  
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .main-text h1 {
+      font-size: 48px;
+    }
+  
+    .main-text p {
+      font-size: 18px;
+    }
+}
+
+/* A esta seccion le pongo backgroung negro */
+.container-img{
+    background-color: #000;
+    width: 100%;
+}
+
+/* ------SHOP------ */
+
+
+.table-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto, minmax(350px, 1fr));
+    grid-gap: 10px;
+    max-width: 1900px; /* Limita el ancho máximo del grid */
+    margin: 10px;
+
+}
+
+.container-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.product-description {
+    text-align: center; /* Asegura que todo el contenido dentro de .product-description esté centrado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-description h3{
+    font-size:20px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.product-description span{
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+}
+
+.container-products img{
+    object-fit: cover !important;
+    cursor: pointer;
+}
+
+.btn-secondary{
+    padding: 5px 9px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    transition: all 0,3s;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(49, 49, 49);
+}
+
+.btn-secondary:hover{
+    background-color:rgb(57, 57, 57);
+    color: rgb(255, 255, 255);
+}
+
+/*LOCALES*/
+
+.local-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.local-section h2 {
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.local-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border: none;
+    padding: 20px;
+}
+
+.local-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.local-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.local-details h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.local-details p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.local-map iframe {
+    border-radius: 4px;
+}
+
+/*FOOTER*/
+.top-bar {
+    background-color: #FF6600;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.top-bar img{
+    width: 30px;
+    padding-left: 5px;
+}
+
+.footer-logos{
+    display: flex;
+}
+
+/*CART*/
+
+.cart-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente si es necesario */
+    margin: 20px;
+}
+
+.cart-content {
+    width: 60%; /* Ajusta el ancho del contenido del carrito según tus necesidades */
+    max-width: 900px; /* Puedes establecer un ancho máximo para el contenido */
+    margin: 0 auto; /* Centra el contenido dentro del contenedor */
+}
+
+h3{
+    text-align: center;
+}
+
+.cart-details {
+    width: 70%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.cart-details h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cart-item-img {
+    width: 100px;
+    height: auto;
+}
+
+.cart-item-info {
+    width: 60%;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    background: none;
+    padding: 5px;
+    border-color: #9d9d9d;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px; /* Ajusta el alto según sea necesario */
+    width: 20px; /* Ajusta el ancho según sea necesario */
+    border-radius: 3px;
+    font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+    color: #202020;
+}
+
+.remove-item-btn {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.cart-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.cart-actions a {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-actions p {
+    font-size: 24px; /* Ajusta este valor para el tamaño del texto */
+    font-weight: bold; /* Esto hará que el texto esté en negrita */
+    color: #000;
+}
+
+.back-btn, .continue-btn {
+    background-color: #000;
+    color: #fff;
+    font-size: medium;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 0%;
+}
+
+
+.continue-btn:hover, .back-btn:hover {
+    background-color: #333;
+}
