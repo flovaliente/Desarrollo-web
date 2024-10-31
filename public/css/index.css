@@ -187,6 +187,55 @@ h3{
     color: rgb(255, 255, 255);
 }
 
+.filter-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 20px;
+    align-items: center;
+}
+
+.filter-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #e8e8e8;
+    color: #202020;
+    background-color: white;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.filter-button i {
+    margin-right: 5px;
+}
+
+.filter-button:hover {
+    background-color: #f1f1f1;
+    color: #000;
+    border-color: #e8e8e8;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown label {
+    margin-right: 6px;
+    font-size: 13px;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+}
+
+#filter-options {
+    padding: 5px;
+    padding-right: 35px;
+    border: 1px solid #e8e8e8;
+    border-radius: 0;
+    cursor: pointer;
+}
+
 /*LOCALES*/
 
 .local-section {
@@ -393,4 +442,154 @@ h3{
 
 .continue-btn:hover, .back-btn:hover {
     background-color: #333;
+}
+
+/* PRODUCTO */
+
+.product-page {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 20px 0;
+    text-decoration: none;
+    color: #333;
+}
+
+.product-content {
+    display: flex;
+    gap: 20px;
+}
+
+.product-images {
+    display: flex;
+    flex-direction: row; /* Asegura que las miniaturas y la imagen principal estén en la misma fila */
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.thumbnails img {
+    width: 100px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.main-image {
+    position: relative;
+    text-align: center;
+}
+
+.main-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.product-code {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+    margin: 15px 0;
+}
+
+.product-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.product-options label {
+    font-size: 14px;
+    color: #333;
+}
+
+.product-options select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 60px;
+}
+
+.product-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.wishlist-button {
+    background: none;
+    color: #555;
+    align-items: center;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.itau-button {
+    margin: 20px 0;
+}
+
+.millas-button {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: #f36f21;
+    border: 1px solid #f36f21;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.millas-button img {
+    margin-right: 5px;
+    height: 20px;
+}
+
+.shipping-info {
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 20px;
 }
