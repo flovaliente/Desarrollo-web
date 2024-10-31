@@ -125,9 +125,9 @@ h3{
 
 
 .table-responsive {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
-    grid-template-columns: repeat(auto, minmax(350px, 1fr));
+    grid-template-columns: repeat(4, minmax(350px, 1fr));
     grid-gap: 10px;
     max-width: 1900px; /* Limita el ancho máximo del grid */
     margin: 10px;
